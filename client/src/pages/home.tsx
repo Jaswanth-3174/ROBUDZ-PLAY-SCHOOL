@@ -25,7 +25,7 @@ export default function Home() {
       
       {/* Floating Action Button */}
       <div className="fixed bottom-8 right-8 z-40">
-        <a href="#enroll" className="w-16 h-16 bg-gradient-to-r from-coral to-turquoise rounded-full flex items-center justify-center text-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 animate-bounce-slow">
+        <a href="#enroll" className="w-16 h-16 bg-gradient-to-r from-sky to-turquoise rounded-full flex items-center justify-center text-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <i className="fas fa-child text-xl"></i>
         </a>
       </div>

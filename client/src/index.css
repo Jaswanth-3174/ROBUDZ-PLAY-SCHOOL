@@ -25,12 +25,12 @@
   --radius: 1rem;
   
   /* Custom colors for playschool theme */
-  --coral: 8 82% 70%; /* #FF6B6B */
-  --turquoise: 177 56% 57%; /* #4ECDC4 */
-  --sky: 198 89% 60%; /* #45B7D1 */
-  --mint: 158 35% 69%; /* #96CEB4 */
-  --sunny: 44 95% 67%; /* #FECA57 */
-  --purple-pink: 292 100% 81%; /* #FF9FF3 */
+  --coral: 348 86% 61%; /* #E53E3E - Warm Red */
+  --turquoise: 171 77% 64%; /* #38B2AC - Teal */
+  --sky: 213 94% 68%; /* #4299E1 - Blue */
+  --mint: 146 64% 71%; /* #68D391 - Green */
+  --sunny: 45 93% 58%; /* #ECC94B - Yellow */
+  --purple-pink: 271 81% 71%; /* #9F7AEA - Purple */
 }
 
 .dark {
@@ -128,7 +128,7 @@
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--coral)) 0%, hsl(var(--turquoise)) 50%, hsl(var(--sky)) 100%);
+    background: linear-gradient(135deg, hsl(var(--sky)) 0%, hsl(var(--turquoise)) 50%, hsl(var(--mint)) 100%);
   }
   
   .blob-shape {

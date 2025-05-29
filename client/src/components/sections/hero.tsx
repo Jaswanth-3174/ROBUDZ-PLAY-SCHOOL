@@ -25,33 +25,17 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center gradient-bg overflow-hidden">
-      {/* Animated Background Shapes */}
+      {/* Subtle Background Decoration */}
       <div className="absolute inset-0">
         <motion.div 
-          className="absolute top-10 left-10 w-20 h-20 bg-sunny/30 blob-shape"
-          animate={{ y: [-10, 10, -10] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-20 left-10 w-16 h-16 bg-white/10 rounded-full"
+          animate={{ y: [-5, 5, -5] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute top-32 right-20 w-16 h-16 bg-purple-pink/30 rounded-full"
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute bottom-20 left-1/4 w-24 h-24 bg-white/20 blob-shape"
-          animate={{ 
-            y: [-10, 10, -10],
-            rotate: [0, 180, 360]
-          }}
-          transition={{ 
-            y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
-            rotate: { duration: 10, repeat: Infinity, ease: "linear" }
-          }}
-        />
-        <motion.div 
-          className="absolute bottom-32 right-10 w-12 h-12 bg-mint/40 rounded-full"
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute bottom-32 right-20 w-12 h-12 bg-white/10 rounded-full"
+          animate={{ y: [0, -8, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />
       </div>
 
@@ -65,15 +49,15 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <motion.h1 
-              className="text-4xl md:text-6xl font-fredoka text-white mb-6 text-shadow"
+              className="text-4xl md:text-6xl font-fredoka text-white mb-6 drop-shadow-lg"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Where Learning Meets <span className="text-sunny">Fun!</span>
+              Where Learning Meets <span className="text-yellow-300 drop-shadow-md">Fun!</span>
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-md"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -88,17 +72,17 @@ export default function Hero() {
             >
               <motion.button 
                 onClick={handleScrollToEnroll}
-                className="bg-white text-coral px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className="bg-white text-sky px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <i className="fas fa-child mr-2"></i> Enroll Your Child
               </motion.button>
               <motion.button 
                 onClick={handleScrollToAbout}
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-coral transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className="border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <i className="fas fa-play mr-2"></i> Learn More
               </motion.button>
@@ -116,18 +100,18 @@ export default function Hero() {
               src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
               alt="Children playing in colorful playground" 
               className="rounded-3xl shadow-2xl w-full h-auto"
-              animate={{ y: [-5, 5, -5] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              animate={{ y: [-2, 2, -2] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             />
             
             {/* Floating Achievement Cards */}
             <motion.div 
               className="absolute -top-4 -left-4 bg-white rounded-2xl p-4 shadow-lg"
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              animate={{ y: [0, -5, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-coral rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-coral to-sky rounded-full flex items-center justify-center">
                   <i className="fas fa-star text-white text-sm"></i>
                 </div>
                 <div>
@@ -139,11 +123,11 @@ export default function Hero() {
 
             <motion.div 
               className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg"
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              animate={{ y: [0, -5, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
             >
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-turquoise rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-turquoise to-mint rounded-full flex items-center justify-center">
                   <i className="fas fa-users text-white text-sm"></i>
                 </div>
                 <div>
