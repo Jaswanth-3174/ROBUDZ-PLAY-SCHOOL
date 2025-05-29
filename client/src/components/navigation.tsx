@@ -39,7 +39,7 @@ export default function Navigation() {
   return (
     <>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gradient-to-r from-purple-500/95 to-pink-500/95 backdrop-blur-md shadow-xl' : 'bg-gradient-to-r from-blue-500/95 to-purple-600/95 backdrop-blur-md shadow-lg'
+        isScrolled ? 'bg-white/98 backdrop-blur-md shadow-xl border-b border-orange-100' : 'bg-white/95 backdrop-blur-md shadow-lg'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -50,10 +50,10 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                <i className="fas fa-rainbow text-white text-xl"></i>
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-400 rounded-2xl flex items-center justify-center">
+                <i className="fas fa-child text-white text-xl"></i>
               </div>
-              <span className="ml-3 text-2xl font-fredoka text-white">Rainbow Kids</span>
+              <span className="ml-3 text-2xl font-fredoka text-gray-800">Little Stars Academy</span>
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -63,7 +63,7 @@ export default function Navigation() {
                   <motion.button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-white/90 hover:text-white font-medium px-4 py-2 rounded-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+                    className="text-gray-700 hover:text-orange-500 font-medium px-4 py-2 rounded-lg hover:bg-orange-50 transition-all duration-300"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -75,7 +75,7 @@ export default function Navigation() {
                 ))}
                 <motion.button
                   onClick={() => handleNavClick("#enroll")}
-                  className="bg-gradient-to-r from-orange-400 to-pink-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }}

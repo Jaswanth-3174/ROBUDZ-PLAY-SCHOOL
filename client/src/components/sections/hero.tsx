@@ -49,20 +49,20 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <motion.h1 
-              className="text-4xl md:text-6xl font-fredoka text-white mb-6 drop-shadow-lg"
+              className="text-4xl md:text-6xl font-fredoka text-gray-800 mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Where Learning Meets <span className="text-yellow-300 drop-shadow-md">Fun!</span>
+              Where Little <span className="text-orange-500">Dreams</span> Take Flight!
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-md"
+              className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Welcome to Rainbow Kids Playschool - nurturing young minds through play-based learning, creativity, and endless adventures!
+              Welcome to Little Stars Academy - where every child shines bright through creative learning, joyful discovery, and endless possibilities!
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
@@ -72,19 +72,19 @@ export default function Hero() {
             >
               <motion.button 
                 onClick={handleScrollToEnroll}
-                className="bg-white text-sky px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <i className="fas fa-child mr-2"></i> Enroll Your Child
+                <i className="fas fa-star mr-2"></i> Start Your Journey
               </motion.button>
               <motion.button 
                 onClick={handleScrollToAbout}
-                className="border-2 border-white/80 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+                className="border-2 border-orange-400 text-orange-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-orange-50 transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <i className="fas fa-play mr-2"></i> Learn More
+                <i className="fas fa-heart mr-2"></i> Discover More
               </motion.button>
             </motion.div>
           </motion.div>
@@ -106,33 +106,33 @@ export default function Hero() {
             
             {/* Floating Achievement Cards */}
             <motion.div 
-              className="absolute -top-4 -left-4 bg-white rounded-2xl p-4 shadow-lg"
+              className="absolute -top-4 -left-4 bg-white rounded-2xl p-4 shadow-lg border-l-4 border-orange-400"
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-coral to-sky rounded-full flex items-center justify-center">
-                  <i className="fas fa-star text-white text-sm"></i>
+                <div className="w-10 h-10 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full flex items-center justify-center">
+                  <i className="fas fa-award text-white text-sm"></i>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm">Award Winning</p>
-                  <p className="text-xs text-muted-foreground">Best Playschool 2024</p>
+                  <p className="font-semibold text-gray-800 text-sm">Excellence Award</p>
+                  <p className="text-xs text-gray-600">Best Academy 2024</p>
                 </div>
               </div>
             </motion.div>
 
             <motion.div 
-              className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg"
+              className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border-l-4 border-blue-400"
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
             >
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-turquoise to-mint rounded-full flex items-center justify-center">
-                  <i className="fas fa-users text-white text-sm"></i>
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center">
+                  <i className="fas fa-heart text-white text-sm"></i>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm">200+ Kids</p>
-                  <p className="text-xs text-muted-foreground">Happy Students</p>
+                  <p className="font-semibold text-gray-800 text-sm">300+ Families</p>
+                  <p className="text-xs text-gray-600">Trust Our Care</p>
                 </div>
               </div>
             </motion.div>

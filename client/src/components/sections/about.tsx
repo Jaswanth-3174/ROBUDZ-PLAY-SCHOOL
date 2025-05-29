@@ -30,8 +30,8 @@ export default function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-fredoka text-foreground mb-4">About Rainbow Kids</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Dedicated to providing exceptional early childhood education in a nurturing, fun-filled environment.</p>
+          <h2 className="text-4xl md:text-5xl font-fredoka text-gray-800 mb-4">About Little Stars Academy</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Dedicated to nurturing young minds through innovative learning, creative play, and a warm, supportive environment.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
