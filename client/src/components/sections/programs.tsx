@@ -103,8 +103,8 @@ export default function Programs() {
               className={`bg-white rounded-3xl p-8 shadow-lg card-hover border-t-4 border-${program.color}`}
               whileHover={{ y: -8 }}
             >
-              <div className={`w-16 h-16 bg-${program.color}/20 rounded-full flex items-center justify-center mb-6`}>
-                <i className={`${program.icon} text-${program.color} text-2xl`}></i>
+              <div className={`w-20 h-20 bg-${program.color}/20 rounded-full flex items-center justify-center mb-6`}>
+                <i className={`${program.icon} text-${program.color} text-3xl`}></i>
               </div>
               <h3 className="text-2xl font-poppins font-semibold text-foreground mb-4">{program.title}</h3>
               <p className="text-muted-foreground mb-4">{program.ageRange}</p>

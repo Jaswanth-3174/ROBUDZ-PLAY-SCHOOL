@@ -44,8 +44,8 @@ export default function About() {
           >
             <div className="space-y-8">
               <motion.div variants={itemVariants} className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-coral rounded-full flex items-center justify-center flex-shrink-0">
-                  <i className="fas fa-heart text-white"></i>
+                <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-heart text-white text-xl"></i>
                 </div>
                 <div>
                   <h3 className="text-xl font-poppins font-semibold text-foreground mb-2">Our Mission</h3>
@@ -54,8 +54,8 @@ export default function About() {
               </motion.div>
 
               <motion.div variants={itemVariants} className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-turquoise rounded-full flex items-center justify-center flex-shrink-0">
-                  <i className="fas fa-seedling text-white"></i>
+                <div className="w-16 h-16 bg-turquoise rounded-full flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-seedling text-white text-xl"></i>
                 </div>
                 <div>
                   <h3 className="text-xl font-poppins font-semibold text-foreground mb-2">Our Vision</h3>
@@ -64,8 +64,8 @@ export default function About() {
               </motion.div>
 
               <motion.div variants={itemVariants} className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-sky rounded-full flex items-center justify-center flex-shrink-0">
-                  <i className="fas fa-graduation-cap text-white"></i>
+                <div className="w-16 h-16 bg-sky rounded-full flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-graduation-cap text-white text-xl"></i>
                 </div>
                 <div>
                   <h3 className="text-xl font-poppins font-semibold text-foreground mb-2">Our Approach</h3>

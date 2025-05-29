@@ -128,7 +128,7 @@
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--sky)) 0%, hsl(var(--turquoise)) 50%, hsl(var(--mint)) 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
   }
   
   .blob-shape {

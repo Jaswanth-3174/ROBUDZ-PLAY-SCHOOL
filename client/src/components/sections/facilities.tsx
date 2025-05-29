@@ -86,8 +86,8 @@ export default function Facilities() {
                 className={`bg-gradient-to-br from-${facility.color}/10 to-${facility.color}/20 rounded-2xl p-6 text-center card-hover`}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className={`w-12 h-12 bg-${facility.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                  <i className={`${facility.icon} text-white`}></i>
+                <div className={`w-16 h-16 bg-${facility.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                  <i className={`${facility.icon} text-white text-xl`}></i>
                 </div>
                 <h3 className="font-poppins font-semibold text-foreground mb-2">{facility.title}</h3>
                 <p className="text-sm text-muted-foreground">{facility.description}</p>
@@ -153,8 +153,8 @@ export default function Facilities() {
                 className="flex flex-col items-center"
                 whileHover={{ scale: 1.1 }}
               >
-                <div className={`w-12 h-12 bg-${amenity.color}/20 rounded-full flex items-center justify-center mb-3`}>
-                  <i className={`${amenity.icon} text-${amenity.color}`}></i>
+                <div className={`w-16 h-16 bg-${amenity.color}/20 rounded-full flex items-center justify-center mb-3`}>
+                  <i className={`${amenity.icon} text-${amenity.color} text-xl`}></i>
                 </div>
                 <p className="text-sm font-medium text-foreground">{amenity.title}</p>
               </motion.div>
