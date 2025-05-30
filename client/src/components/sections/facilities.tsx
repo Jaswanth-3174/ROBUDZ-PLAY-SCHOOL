@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useState } from 'react';
+import Image1 from '../../assets/PT.png'
 
 export default function Facilities() {
   const facilities = [
@@ -9,7 +11,7 @@ export default function Facilities() {
       color: "coral"
     },
     {
-      icon: "fas fa-playground",
+      icon: "fas fa-gamepad",
       title: "Outdoor Playground",
       description: "Safe, age-appropriate play equipment",
       color: "turquoise"
@@ -21,11 +23,17 @@ export default function Facilities() {
       color: "sky"
     },
     {
-      icon: "fas fa-utensils",
+      icon: "fas fa-mug-saucer",
       title: "Cafeteria",
       description: "Nutritious meals and snacks",
-      color: "mint"
-    }
+      color: "coral"
+    },
+    //  {
+    //   icon: "fas fa-book",
+    //   title: "Library Corner",
+    //   description: "Cozy reading nook with children's books",
+    //   color: "lilac"
+    // }
   ];
 
   const amenities = [
@@ -104,7 +112,7 @@ export default function Facilities() {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              src={Image1} 
               alt="Modern preschool classroom interior" 
               className="rounded-3xl shadow-xl w-full h-auto" 
             />

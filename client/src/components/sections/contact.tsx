@@ -22,13 +22,13 @@ export default function Contact() {
     {
       icon: "fas fa-map-marker-alt",
       title: "Address",
-      content: "123 Rainbow Street, Happy Valley, CA 90210",
+      content: "62 Sriram Nagar, Amman Nagar Soorath Amman Temple Backside, Nemilicheri, Tamil Nadu 602024",
       color: "coral"
     },
     {
       icon: "fas fa-phone",
       title: "Phone",
-      content: "(555) 123-KIDS (5437)",
+      content: "(+91) 01234 - 56789",
       color: "turquoise"
     },
     {
@@ -146,17 +146,26 @@ export default function Contact() {
             </div>
 
             {/* Map Placeholder */}
-            <motion.div 
-              className="mt-8 bg-gray-100 rounded-2xl p-8 text-center"
-              variants={itemVariants}
-            >
-              <i className="fas fa-map text-4xl text-gray-400 mb-4"></i>
-              <h4 className="font-semibold text-foreground mb-2">Interactive Map</h4>
-              <p className="text-muted-foreground mb-4">Get directions to our location</p>
-              <Button className="bg-gradient-to-r from-coral to-turquoise hover:from-turquoise hover:to-coral text-white">
-                <i className="fas fa-directions mr-2"></i> Get Directions
-              </Button>
-            </motion.div>
+            {/* Map Placeholder */}
+<motion.div 
+  className="mt-8 bg-gray-100 rounded-2xl p-8 text-center"
+  variants={itemVariants}
+>
+  <i className="fas fa-map text-4xl text-gray-400 mb-4"></i>
+  <h4 className="font-semibold text-foreground mb-2">Interactive Map</h4>
+  <p className="text-muted-foreground mb-4">Get directions to our location</p>
+
+  <a 
+    href="https://maps.app.goo.gl/ntn9QiSmQXMSjR6g8" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Button className="bg-gradient-to-r from-coral to-turquoise hover:from-turquoise hover:to-coral text-white">
+      <i className="fas fa-directions mr-2"></i> Get Directions
+    </Button>
+  </a>
+</motion.div>
+
 
             {/* Social Media */}
             <motion.div className="mt-8" variants={itemVariants}>

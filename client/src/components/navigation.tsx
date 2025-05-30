@@ -21,7 +21,7 @@ export default function Navigation() {
     { href: "#facilities", label: "Facilities" },
     { href: "#gallery", label: "Gallery" },
     { href: "#testimonials", label: "Testimonials" },
-    { href: "#contact", label: "Contact" },
+    // { href: "#contact", label: "Contact" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -53,7 +53,7 @@ export default function Navigation() {
               <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-400 rounded-2xl flex items-center justify-center">
                 <i className="fas fa-child text-white text-xl"></i>
               </div>
-              <span className="ml-3 text-2xl font-fredoka text-gray-800">Little Stars Academy</span>
+              <span className="ml-3 text-2xl font-fredoka text-gray-800">PlaySchool</span>
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -74,7 +74,7 @@ export default function Navigation() {
                   </motion.button>
                 ))}
                 <motion.button
-                  onClick={() => handleNavClick("#enroll")}
+                  onClick={() => handleNavClick("#contact")}
                   className="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -82,7 +82,7 @@ export default function Navigation() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Enroll Now
+                  Contact Us
                 </motion.button>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function Navigation() {
             </button>
           ))}
           <button
-            onClick={() => handleNavClick("#enroll")}
+            onClick={() => handleNavClick("#contact")}
             className="block w-full bg-gradient-to-r from-coral to-turquoise text-white px-6 py-3 rounded-full text-center mt-4 hover:shadow-lg transition-all duration-300"
           >
             Enroll Now

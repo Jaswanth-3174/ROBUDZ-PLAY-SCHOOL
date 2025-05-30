@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-
+import { useState } from 'react';
+import Image1 from '../../assets/rocket.png'
 export default function About() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -83,15 +84,15 @@ export default function About() {
               viewport={{ once: true }}
             >
               <motion.div variants={itemVariants} className="text-center">
-                <div className="text-3xl font-fredoka text-coral mb-2">15+</div>
+                <div className="text-3xl font-fredoka text-coral mb-2">5+</div>
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </motion.div>
               <motion.div variants={itemVariants} className="text-center">
-                <div className="text-3xl font-fredoka text-turquoise mb-2">25+</div>
+                <div className="text-3xl font-fredoka text-turquoise mb-2">10+</div>
                 <p className="text-sm text-muted-foreground">Expert Teachers</p>
               </motion.div>
               <motion.div variants={itemVariants} className="text-center">
-                <div className="text-3xl font-fredoka text-sky mb-2">500+</div>
+                <div className="text-3xl font-fredoka text-sky mb-2">300+</div>
                 <p className="text-sm text-muted-foreground">Happy Graduates</p>
               </motion.div>
             </motion.div>
@@ -120,7 +121,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400" 
+                src={Image1} 
                 alt="Teacher reading to children" 
                 className="w-full h-full object-cover" 
               />

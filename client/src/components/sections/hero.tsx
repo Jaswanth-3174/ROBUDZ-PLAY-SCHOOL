@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { useState } from 'react';
+import Image1 from '../../assets/1.png'
 
 export default function Hero() {
   const handleScrollToEnroll = () => {
-    const element = document.querySelector("#enroll");
+    const element = document.querySelector("#contact");
     if (element) {
       const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
       window.scrollTo({
@@ -97,7 +99,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <motion.img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              src={Image1}
               alt="Children playing in colorful playground" 
               className="rounded-3xl shadow-2xl w-full h-auto"
               animate={{ y: [-2, 2, -2] }}
@@ -105,7 +107,7 @@ export default function Hero() {
             />
             
             {/* Floating Achievement Cards */}
-            <motion.div 
+            {/* <motion.div 
               className="absolute -top-4 -left-4 bg-white rounded-2xl p-4 shadow-lg border-l-4 border-orange-400"
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -119,10 +121,10 @@ export default function Hero() {
                   <p className="text-xs text-gray-600">Best Academy 2024</p>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div 
-              className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border-l-4 border-blue-400"
+              className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-lg border-l-4 border-blue-400"
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
             >

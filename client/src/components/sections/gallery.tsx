@@ -1,49 +1,57 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState } from 'react';
+import Image1 from '../../assets/rocket.png'
+import Image2 from '../../assets/annual.png';
+import Image3 from '../../assets/award.png';
+import Image4 from '../../assets/tables.png';
+import Image5 from '../../assets/krish.png';
+import Image6 from '../../assets/ind.png';
+import Image7 from '../../assets/screen.png';
+import Image8 from '../../assets/superman.png';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image1,
       alt: "Children playing with educational toys",
-      title: "Learning Through Play"
+      title: "Blast Off Fun"
     },
     {
-      src: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image2,
       alt: "Children doing arts and crafts",
-      title: "Creative Arts"
+      title: "Wild Stage Magic"
     },
     {
-      src: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image3,
       alt: "Children playing on outdoor playground equipment",
-      title: "Outdoor Fun"
+      title: "Joyful Book Moment"
     },
     {
-      src: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image4,
       alt: "Children in music and movement class",
-      title: "Music & Movement"
+      title: "Colorful Play Haven"
     },
     {
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image5,
       alt: "Story time with teacher and children",
-      title: "Story Time"
+      title: "Festive Krishna Vibes"
     },
     {
-      src: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image6,
       alt: "Children having healthy snacks",
-      title: "Snack Time"
+      title: "Proud Flag Bearer"
     },
     {
-      src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image7,
       alt: "Children exploring science activities",
-      title: "Science Discovery"
+      title: "Engaging Class Screen"
     },
     {
-      src: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400",
+      src: Image8,
       alt: "Preschool graduation ceremony",
-      title: "Graduation Day"
+      title: "Superhero Grad Cheer"
     }
   ];
 
@@ -127,13 +135,13 @@ export default function Gallery() {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <motion.button 
+          {/* <motion.button 
             className="bg-gradient-to-r from-coral to-turquoise text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <i className="fas fa-images mr-2"></i> View More Photos
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
 

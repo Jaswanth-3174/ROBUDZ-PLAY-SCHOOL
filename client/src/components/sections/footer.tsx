@@ -115,11 +115,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <i className="fas fa-map-marker-alt text-coral mr-3"></i>
-                <span className="text-gray-300">123 Rainbow Street, Happy Valley, CA 90210</span>
+                <span className="text-gray-300">62 Sriram Nagar, Amman Nagar Soorath Amman Temple Backside, Nemilicheri, Tamil Nadu 602024</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone text-coral mr-3"></i>
-                <span className="text-gray-300">(555) 123-KIDS</span>
+                <span className="text-gray-300">(+91) 12345-67890</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope text-coral mr-3"></i>
@@ -141,7 +141,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2024 Rainbow Kids Playschool. All rights reserved.</p>
+          <p className="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Rainbow Kids Playschool. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-coral transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="text-gray-400 hover:text-coral transition-colors duration-300">Terms of Service</a>

@@ -3,28 +3,28 @@ import { motion } from "framer-motion";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Mother of Emma, 4 years",
-      content: "Rainbow Kids has been amazing for Emma! She loves going to school every day and has learned so much. The teachers are caring and the facilities are top-notch.",
+      name: "Mythili Vasudevan",
+      role: "4 months ago",
+      content: "My elder kid Thikshi have completed her earlier child hood education here which resulted in awesome growth in all aspects and now my second kid San is doing KG here where we are witnessing splendid growth through this play way method and brain stimulating activities.",
       avatar: "fas fa-user"
     },
     {
-      name: "Michael Chen",
-      role: "Father of Alex, 3 years",
-      content: "The play-based learning approach is fantastic. Alex has developed so much confidence and social skills. We couldn't be happier with our choice!",
+      name: "Tamilselvi R",
+      role: "3 months ago",
+      content: "When visiting ROBUDZ PLAY SCHOOL,we liked the feeling well received,a very warm feeling from every teacher and a little bit of a home feeling to the school feeling.The children seem very happy and we like all the activities they do with the children.My son like this school and he wants to go on all holiday also.",
       avatar: "fas fa-user"
     },
     {
-      name: "Lisa Rodriguez",
-      role: "Mother of Sofia, 5 years",
-      content: "Sofia is now ready for kindergarten thanks to Rainbow Kids. The pre-K program prepared her perfectly. The teachers are like family to us!",
+      name: "Mahalakshmi lachu",
+      role: "3 months ago",
+      content: "Good School create a community of learners and I m sure that Robuds is doing it well, planned activities,methods of learning etc . Good place to start the education.",
       avatar: "fas fa-user"
     }
   ];
 
   const stats = [
     { value: "4.9/5", label: "Average Rating", color: "coral" },
-    { value: "150+", label: "Parent Reviews", color: "turquoise" },
+    { value: "50+", label: "Parent Reviews", color: "turquoise" },
     { value: "98%", label: "Satisfaction Rate", color: "sky" },
     { value: "85%", label: "Parent Referrals", color: "mint" }
   ];
